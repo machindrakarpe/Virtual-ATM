@@ -7,6 +7,7 @@ import service.PendingTransactionService;
 import service.TransactionService;
 
 import java.math.BigDecimal;
+import java.util.Optional;
 
 import static domain.Constant.*;
 
@@ -130,4 +131,7 @@ public class ATM {
         pendingTransactionService.printCreditAndDebtMessages(user);
     }
 
+    public Optional<Account> getAccountDetails(String user) {
+        return accountService.getAccount(user);
+    }
 }

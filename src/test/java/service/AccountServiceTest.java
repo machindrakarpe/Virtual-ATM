@@ -1,7 +1,8 @@
+package service;
+
 import domain.Account;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import service.AccountService;
 
 import java.math.BigDecimal;
 import java.util.Optional;
